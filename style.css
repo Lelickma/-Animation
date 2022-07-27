@@ -1,0 +1,177 @@
+
+body {
+  background-color: #000;
+}
+
+
+h1,h3 {
+  text-align: center;
+  font-family: arial;
+  color: white;
+}
+
+
+.left {
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  left: 0;
+}
+
+
+.right {
+  position: absolute;
+  margin: auto;
+  top: 400px;
+  right: 0;
+}
+
+img {
+
+  width: 200px;
+  height: 200px;
+  animation: bounce 2s infinite;
+}
+
+image{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ray_box {
+    position: absolute;
+    margin: auto;
+    top: 400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    -webkit-animation: ray_anim 50s linear infinite;
+    animation: ray_anim 50s linear infinite;
+    z-index: -1;
+}
+
+.ray {
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(230, 194, 62, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(230, 194, 62, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    margin-left: 10px;
+    border-radius: 80% 80% 0 0;
+    position: absolute;
+    opacity: 2;
+}
+
+.ray1 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: -195px;
+    left: 5px;
+}
+
+.ray2 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(220deg);
+    transform: rotate(220deg);
+    top: -150px;
+    left: 75px;
+}
+
+.ray3 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: -90px;
+    left: 100px;
+}
+
+.ray4 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(305deg);
+    transform: rotate(305deg);
+    top: -10px;
+    left: 100px;
+}
+
+.ray5 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    top: 70px;
+    left: 20px;
+}
+
+.ray6 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    top: 30px;
+    left: -80px;
+}
+
+.ray7 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+    top: -35px;
+    left: -120px;
+}
+
+.ray8 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+    top: -95px;
+    left: -150px;
+}
+
+.ray10 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+    top: -175px;
+    left: -90px;
+}
+
+@keyframes ray_anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  50% {
+     position: absolute; 
+    transform: translateY(30px);
+
+  }
+  95% {
+    transform: translateY(0);
+
+  }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
